@@ -23,26 +23,27 @@ This project follows Clean Architecture. The goal is to keep the business logic 
 
 ## Getting Started
 
-1. Prerequisites
+### Prerequisites
 
 - Node.js (v20+)
 - pnpm (v8+)
 - Docker (for local Database)
 
-1. Installation
+### Installation
 
 ```bash
 pnpm install
 ```
 
-1. Environment Setup
-   Copy the `.env.example` to `.env` and update your database credentials.
+### Environment Setup
+
+Copy the `.env.example` to `.env` and update your database credentials.
 
 ```bash
 cp .env.example .env
 ```
 
-1. Running the Project
+### Running the Project
 
 ```bash
 # Start Docker (PostgreSQL)

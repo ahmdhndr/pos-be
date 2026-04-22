@@ -1,5 +1,5 @@
-import { SuccessResponseMessage } from '@core/decorators/success-response-message.decorator';
-import { Serialize } from '@core/interceptors/serialize.interceptor';
+import { SuccessResponseMessage } from '@core/decorators';
+import { Serialize } from '@core/interceptors';
 import {
   Body,
   Controller,

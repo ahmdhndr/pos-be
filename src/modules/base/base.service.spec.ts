@@ -16,4 +16,18 @@ describe('BaseService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should return welcome message', () => {
+    const result = service.getHello();
+    expect(result).toBe('Welcome to NestJS starter template 🚀');
+  });
+
+  it('should return greeting with name', () => {
+    const result = service.greeting({ fullName: 'John' });
+    expect(result).toBe('Hello John');
+  });
+
+  it('should throw BadRequestException on getError', () => {
+    expect(() => service.getError()).toThrow();
+  });
 });

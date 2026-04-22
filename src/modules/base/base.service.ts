@@ -5,7 +5,7 @@ import { GreetingDto } from './dto/greeting.dto';
 @Injectable()
 export class BaseService {
   getHello() {
-    return 'Welcome to NestJS starter template 🚀';
+    return 'Welcome to POS System Multi Tenant';
   }
 
   greeting(greetingDto: GreetingDto) {

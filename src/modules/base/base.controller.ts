@@ -23,14 +23,14 @@ export class BaseController {
   constructor(private readonly baseService: BaseService) {}
 
   @Get()
-  @SuccessResponseMessage('Success response!')
+  @SuccessResponseMessage('Success')
   @ApiOperation({
     summary: 'Get greeting message',
-    description: 'Returns a welcome message',
+    description: 'Returns a message',
   })
   @ApiResponse({
     status: 200,
-    description: 'Successfully retrieved greeting',
+    description: 'Successfully get a message',
     type: ResponseDto,
   })
   getHello() {

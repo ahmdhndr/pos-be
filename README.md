@@ -59,9 +59,9 @@ pnpm run start:dev
 
 This system uses a Schema-per-Tenant approach.
 
-Identification: The TenantMiddleware extracts the tenant identifier from the X-Tenant-ID header or the subdomain.
+1. Identification: The TenantMiddleware extracts the tenant identifier from the X-Tenant-ID header or the subdomain.
 
-Isolation: Database connections are dynamically switched at the request level to ensure data isolation.
+2. Isolation: Database connections are dynamically switched at the request level to ensure data isolation.
 
 ## Testing (TDD Approach)
 
